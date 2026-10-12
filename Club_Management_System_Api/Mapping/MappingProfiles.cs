@@ -6,6 +6,7 @@ using Club_Management_System_Api.DTOs.MemberShipDTOs;
 using Club_Management_System_Api.DTOs.FacilityDTOs;
 using Club_Management_System_Api.DTOs.BookingDTOs;
 using Club_Management_System_Api.DTOs.PaymentDTOs;
+using Club_Management_System_Api.DTOs.AuthDTOs;
 
 namespace Club_Management_System_Api.Mapping
 {
@@ -34,6 +35,11 @@ namespace Club_Management_System_Api.Mapping
 
             CreateMap<Payment, PaymentStatisticsDTO>().ReverseMap();
             CreateMap<Payment,CreatePaymentDTO>().ReverseMap();
+
+
+            CreateMap<User, LoginDTO>().ReverseMap();
+            CreateMap<User, RegisterDTO>().ReverseMap();
+
 
         }
     }

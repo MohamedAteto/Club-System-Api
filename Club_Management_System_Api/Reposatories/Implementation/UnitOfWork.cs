@@ -15,8 +15,10 @@ namespace Club_Management_System_Api.Reposatories.Implementation
 
         public IPaymentRepo PaymentRepo { get; }
 
+        public IUserRepo UserRepo { get; }
+
         public UnitOfWork( AppDbContext context , IMemberRepo memberRepo , IMemberShipRepo memberShipRepo 
-            , IFacilityRepo FacilityRepo , IBookingRepo bookingRepo , IPaymentRepo paymentRepo) {
+            , IFacilityRepo FacilityRepo , IBookingRepo bookingRepo , IPaymentRepo paymentRepo , IUserRepo userRepo) {
 
             _context = context;
             MemberRepo = memberRepo;
@@ -24,6 +26,7 @@ namespace Club_Management_System_Api.Reposatories.Implementation
             this.FacilityRepo = FacilityRepo;
             BookingRepo = bookingRepo;
             PaymentRepo = paymentRepo;
+            UserRepo = userRepo;
         }
         public async Task SaveChangesAsync()
         {

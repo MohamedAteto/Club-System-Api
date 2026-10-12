@@ -15,6 +15,7 @@ namespace Club_Management_System_Api.Data
         public DbSet<Member> Members { get; set; }
         public DbSet<Facility> Facilities { get; set; }
         public DbSet<Booking> Bookings { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
 

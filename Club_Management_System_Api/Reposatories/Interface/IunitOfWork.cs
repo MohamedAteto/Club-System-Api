@@ -7,6 +7,7 @@
         IFacilityRepo FacilityRepo { get; }
         IBookingRepo BookingRepo { get; }
         IPaymentRepo PaymentRepo { get; }
+        IUserRepo UserRepo { get; }
 
         Task SaveChangesAsync();
     }
